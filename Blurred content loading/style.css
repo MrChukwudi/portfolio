@@ -1,0 +1,32 @@
+/* Because I want my Default Font to be Roboto, I picked the below Robot font from Google 400/700 */
+@import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.bg {
+  background: url("https://images.unsplash.com/photo-1626882920560-80b382db2bc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY4MjE1OTc4Nw&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080")
+    no-repeat center center/cover;
+  position: absolute; /*This allows the bg to be positioned such that the neigbour container in the flex body can lay on top of bg*/
+  /* top: -30px; */
+  /* left: -30px; */
+  width: calc(100vw );
+  height: calc(100vh );
+  z-index: -1;
+  filter: blur(0px);
+}
+
+.loading-text {
+  font-size: 50px;
+  color: hsl(307, 41%, 8%);
+}

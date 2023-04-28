@@ -8,9 +8,51 @@
 }
 body {
   font-family: "Roboto", sans-serif;
-  /* display: flex;
-  flex-direction: column;
+  display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh; */
+  height: 100vh;
+  background-image: linear-gradient(90deg, #7d5fff, #7158);
+}
+
+.search {
+  position: relative; /*We will position things within it*/
+  height: 50px;
+}
+
+.search .input {
+  background-color: #fff;
+  border: 0;
+  font-size: 18px;
+  padding: 15px;
+  height: 50px;
+  width: 50px; /*We will start off at this width, and then add animation to expand it later*/
+  transition: width 0.3s ease-in;
+}
+
+.btn {
+  background-color: #fff;
+  border: 0;
+  cursor: pointer;
+  font-size: 24px;
+  position: absolute; /*To position it on top of the input element and make it appear stand-alone by default*/
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  transition: transform 0.3s ease;
+}
+
+.btn:focus .input:focus {
+  outline: none;
+}
+
+.search.active .input {
+  width: 200px;
+}
+
+.search.active .btn {
+  transform: translateX(
+    198px
+  ); /*to move the search Icon 198px to the right out of the way of the input firsl*/
 }
