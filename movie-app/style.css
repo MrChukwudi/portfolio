@@ -12,7 +12,7 @@
 body {
   background-color: var(--primary-color);
   font-family: "Poppins", sans-serif;
-  margin: 0;
+  margin: 0 auto;
 }
 
 header {
@@ -44,6 +44,9 @@ header {
 main {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1;
+  
 }
 
 .movie {
@@ -103,5 +106,5 @@ main {
 }
 
 .movie:hover .overview {
-  transform: trasnlateY(0);
+  transform: translateY(0);
 }
